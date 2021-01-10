@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VersusCOVID19</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+</head>
+<script>
+    function nav_open() {
+        document.getElementById("mob_nav").style.display = "block";
+    }
+    function nav_close() {
+        document.getElementById('mob_nav').style.display = "none";
+    }
+</script>
+
+<body class="home">
+    <div id="mob_header">
+        <button onclick="nav_open()">=</button>
+        <div id="logo"></div>
+        <div id="mob_nav">
+            <button onclick="nav_close()">X</button>
+            <a href="home.html">Home page</a>
+            <a href="datacollection.aspx">Statistics</a>
+            <a href="takeaction.html">Take actions</a>
+        </div>
+    </div>
+    <div id="body">
+        <header>
+            <button onclick="nav_open()">=</button>
+            <div id="logo"></div>
+            <nav>
+                <img id="clip" src="Images/clip2.png">
+                <a href="takeaction.html" id="action_label">Take actions</a>
+                <a href="datacollection.aspx" id="stat_label">Statistics</a>
+                <a href="home.html" id="home_label">Home page</a>
+            </nav>
+        </header>
+        <!--Main page-->
+        <main>
+            <div class="paper">
+                <div class="intro">
+                    <p>Pray for us and Coronavirus victims</p>
+                    <p>Hopefully, the Earth get well soon!</p>
+                    <h2 id="a">Together, we can <span style= "color:#228b22">RECOVER</span> the Earth</h2>
+                    <h2 style=" font-family: 'Lobster Two', cursive; font-size: 30px">Starts From <span style="color:#228b22">US</span>!</h2>
+                </div>
+                <div>
+                    <a id= "b" href="datacollection.aspx">Statistics</a>
+                    <p>Get to know the Coronavirus situation in your area. Just by few clicks.</p>
+                    <a id="b" href="takeaction.html">Take actions</a>
+                    <p>Stand together, keep calm and take actions to fight Coronavirus.</p>
+                </div>
+                <img src="./Images/Capture.PNG">
+            </div>
+        </main>
+        <!--Footer-->
+        <footer>
+            <p>This application is created by group 8</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take action</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+</head>
+<script>
+    function nav_open() {
+        document.getElementById("mob_nav").style.display = "block";
+    }
+    function nav_close() {
+        document.getElementById('mob_nav').style.display = "none";
+    }
+</script>
+
+<body class="takeaction">
+    <div id="mob_header">
+        <button onclick="nav_open()">=</button>
+        <div id="logo"></div>
+        <div id="mob_nav">
+            <button onclick="nav_close()">X</button>
+            <a href="home.html">Home page</a>
+            <a href="datacollection.aspx">Statistics</a>
+            <a href="takeaction.html">Take actions</a>
+        </div>
+    </div>
+    <div id="body">
+        <!--header-->
+        <header>
+            <div id="logo"></div>
+            <nav>
+                <img id="clip" src="./Images/clip2.png">
+                <a href="takeaction.html" id="action_label">Take actions</a>
+                <a href="datacollection.aspx" id="stat_label">Statistics</a>
+                <a href="home.html" id="home_label">Home page</a>
+            </nav>
+        </header>
+        <!--main-->
+        <main>
+            <div class="paper">
+                <div class="intro">
+                    <h1 style="color:#dc143c;">Versus COVID19</h1>
+                    <p>How do you fight something you can't see?</p>
+                    <p>That's question when the COVID 19 has been going around.</p>
+                    <h2 style="border: 2px solid; background-color: #fa8072">Keep calm! Take actions!</h2>
+                    <p>Protecting yourself, relatives and community by your responsible and awareness.</p>
+                </div>
+                
+                <div class="advises">
+                <div class="left">
+                   
+                        <h2>Symptoms of Covid-19</h2>
+                        <img src="./Images/Covid-19-Symptoms-3.jpg">
+                <br>
+                        <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html">Learn
+                                more</a><br>
+                        
+                        <h2>Take Steps to Protect Yourself</h2>
+                        <img src="./Images/images (3).png">
+                        <br>
+                        <ul>
+                            <li>Clean your hands</li>
+                        <a href="https://www.cdc.gov/handwashing/when-how-handwashing.html">Learn more</a>
+                        <br>
+                        <li>Avoid close contact</li>
+                        <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">Learn
+                                more</a>
+                         </ul>
+                    
+                </div>
+                <div class="right">
+                    <div class="others">
+                        <h2>Take Steps to Protect Others</h2>
+                        <img src="./Images/coronavirus-infographic-banner-vector-isolated-260nw-1679635480.png">
+                        <ul>
+                            <li>Stay at home if you are sick</li>
+                            <a href="https://www.cdc.gov/flu/business/stay-home-when-sick.htm">Learn more</a>
+                            <br>
+                            <li>Cover coughs and sneezes</li>
+                            <a href="https://www.cdc.gov/healthywater/hygiene/etiquette/coughing_sneezing.html">Learn
+                                more</a>
+                            <br>
+                            <li>When and how to use masks</li>
+                            <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks">
+                                Learn more</a>
+                            <br>
+                            <li>Clean and disinfect frequently</li>
+                            <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/disinfecting-your-home.html#:~:text=cleaning%20and%20disinfection.-,Clean%20surfaces%20using%20soap%20and%20water%2C%20then%20use%20disinfectant.,Disinfecting%20kills%20germs%20on%20surfaces.">Learn
+                                more</a>
+                        </ul>
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>This application is created by group 8 </p>
+        </footer>
+    </div>
+</body>
+
+</html>

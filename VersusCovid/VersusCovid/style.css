@@ -1,0 +1,445 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 50px;
+  background-image: url(./Images/7.jpg);
+  color: white;
+}
+
+header {
+  overflow: hidden;
+}
+
+header a {
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#body {
+  /*to have free space on both sides, so all content is in the center*/
+  width: 70%;
+  /*size of the content block (soft of)*/
+  margin-top: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+  background-color: rgba(241, 241, 160, 0.445);
+  /*content block background color*/
+}
+
+nav {
+  float: right;
+  width: 96%;
+  background-image: url(./Images/folder_back.png);
+  /*back side color*/
+  background-position-y: 30px;
+  background-repeat: repeat-x;
+}
+
+nav>a {
+  font-size:26px;
+  padding-top: 20px;
+  width: 25%;
+  margin-right: 15px;
+  float: right;
+  padding-bottom: 100px;
+  border-radius: 25px;
+  background-color: rgb(255, 185, 55);
+  color: white;
+  margin-top: -20px;
+}
+
+nav>a:hover {
+  background-color: rgb(255, 204, 108);
+}
+
+main {
+  background-color: rgb(255, 234, 165);
+  /*front side color*/
+  overflow: hidden;
+  margin-top: -75px;
+  border-radius: 30px;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#logo {
+  background-image: url(./Images/logo1_t.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 15px;
+}
+
+a {
+  font-size: 25px;
+  color: white;
+}
+
+#clip {
+  height: 150px;
+  position: absolute;
+  top: 234px;
+  z-index: 1;
+}
+
+.paper {
+  text-align: center;
+  background: url(./Images/paper.jpg);
+  width: 95%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding: 100px 0px;
+}
+
+header>button {
+  display: none;
+}
+
+#mob_header {
+  position: fixed;
+  display: none;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  background-color: lightgoldenrodyellow;
+  z-index: 1;
+}
+
+#mob_nav {
+  z-index: 2;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#mob_nav a {
+  float: left;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(129, 129, 96);
+}
+
+/*home page*/
+
+body.home nav>a#action_label, body.home nav>a#stat_label {
+  margin-top: 0px;
+}
+
+body.home nav>a#home_label {
+  margin-top: -20px;
+}
+
+body.home img {
+  height: 250px;
+}
+
+.intro #a{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 30px;
+  word-spacing: 5px;
+}
+#b{
+  font-family: 'Abril Fatface', cursive;
+  font-size: 25px;
+  word-spacing: 5px;
+  background-color:#fa8072;
+  border: 2px solid #fa8072;
+  border-radius: 7px;
+}
+.paper p{
+  font-family: 'Sawarabi Mincho', sans-serif;
+  font-size: 20px;
+  word-spacing: 5px;
+}
+
+
+/*statistics page*/
+
+body.statistics nav>a#home_label, body.statistics nav>a#action_label {
+  margin-top: 0px;
+}
+
+body.statistics nav>a#stat_label {
+  margin-top: -20px;
+}
+
+body.statistics h1 {
+  font-size: 2.5em;
+}
+
+body.statistics h2 {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+#cases_c {
+  font-size: 40px;
+  margin: 10px;
+  letter-spacing: 3px;
+}
+
+ #deaths_c {
+  font-size: 30px;
+  margin: 10px;
+}
+
+#day_cases {
+  margin: 0;
+  color: red;
+  font-size: 30px;
+}
+
+
+#day_deaths {
+  margin: 0;
+  color: red;
+  font-size: 24px;
+}
+
+div.counter {
+  float: left;
+  width: 40%;
+}
+
+div.counter_cases {
+  float: left;
+  width: 60%;
+}
+
+div.counter>p:first-of-type, div.counter_cases>p:first-of-type {
+  font-size: 30px;
+}
+
+.country_block, .area_block {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+label {
+  font-size: 24px;
+  margin: 0 10px 0 20px;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 15px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top:20px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: wheat;
+}
+
+h3 {
+  font-style:italic;
+}
+
+/*take actions page*/
+
+body.takeaction nav>a#home_label, body.takeaction nav>a#stat_label {
+  margin-top: 0px;
+}
+
+body.takeaction nav>a#action_label {
+  margin-top: -20px;
+}
+
+body.takeaction main img {
+  width: 40%;
+}
+body.takeaction main img:last-child{
+  width: 60%;
+}
+
+.intro {
+  width: 100%;
+  overflow: auto;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.takeaction{
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+.advises {
+  margin: 0;
+  width: 100%;
+  overflow: auto;
+}
+.left h2{
+  background-color:#adff2f;
+  border: 2px solid#adff2f;
+  border-radius: 7px;
+}
+.right h2{
+  background-color: #ffd700;
+  border: 2px solid #ffd700;
+  border-radius: 7px;
+ 
+}
+.left img{
+  width: 200px;
+  height:100px;
+}
+.right img{
+  width: 500px;
+  height:100px;
+}
+
+.left {
+  float: left;
+  padding: 0 20px;
+  width: 50%;
+  overflow: auto;
+  text-align: right ;
+}
+.right {
+  float: left;
+  padding: 0 20px;
+  width: 50%;
+  overflow: auto;
+  text-align: left;
+}
+
+
+body.takeaction main a {
+  font-size: 15px;
+}
+
+li {
+  font-size: 20px;
+  line-height: 40px;
+  list-style: none;
+}
+
+.advises div {
+  margin-bottom: 75px;
+}
+
+form p {
+  display: block;
+}
+
+/*mobile screens*/
+
+
+@media screen and (max-width:1400px) {
+  #body {
+    width: 90%;
+  }
+  nav a {
+    width: 20%;
+    font-size: 15px;
+  }
+  body.statistics p {
+    font-size: 10px;
+    word-wrap: break-word;
+  }
+  #cases_c {
+    font-size: 30px;
+  }
+  div.counter>p:first-of-type, div.counter_cases>p:first-of-type {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width:800px) {
+  #body {
+    width: 100%;
+    padding: 10px;
+    padding-top: 75px;
+  }
+  .paper {
+    width: 100%;
+    background: none;
+    padding: 10px;
+  }
+  main {
+    width: 100%;
+    background: none;
+    padding: 10px;
+  }
+  #clip {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  #logo {
+    height: 75px;
+    width: 65%;
+    float: right;
+  }
+  form p {
+    display: block;
+  }
+  #mob_header>button {
+    width: 100px;
+    height: 75px;
+    float: left;
+    box-shadow: none;
+  }
+  #mob_nav>button {
+    width: 100px;
+    height: 75px;
+    box-shadow: none;
+  }
+  body.home img {
+    height: 200px;
+  }
+  div.country_block, div.area_block {
+    width: 100%;
+  }
+  div.country_block *, div.area_block * {
+    width: 100%;
+  }
+  #cases_c, #recovered_c, #deaths_c {
+    margin-left: 0;
+    font-size: 40px;
+  }
+  body.statistics h2 {
+    font-size: 24px;
+  }
+  body.takeaction main img {
+    display: none;
+  }
+  #mob_header {
+    display: block;
+  }
+}
